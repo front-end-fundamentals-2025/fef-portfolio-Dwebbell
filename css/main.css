@@ -9,18 +9,26 @@
     font-size: 36px;
     margin-top: 15px;
     margin-bottom: 30px;
+    border-left: 40px;
+    display: inline-block;
+    color: #e1b674;
+}
+
+header {
     background-color: #6b88e8;
 }
 
 
+
 ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 10px;
+    display: inline-block;
 
 }
 
 a {
-    color: black;
+    color: white;
 
 }
 
