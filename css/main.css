@@ -1,41 +1,47 @@
 * {
-    font-family: "barlow-semi-condensed", sans-serif;
+  font-family: "barlow-semi-condensed", sans-serif;
 }
 
 /* Header */
 
 #site-logo {
-    font-weight: 900;
-    font-size: 36px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    border-left: 40px;
-    display: inline-block;
-    color: #e1b674;
+  font-weight: 900;
+  font-size: 36px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-left: 40px;
+  display: inline-block;
+  color: #e1b674;
 }
 
 header {
-    background-color: #6b88e8;
+  background-color: #6b88e8;
 }
 
 
 
 ul {
-    list-style: none;
-    padding-left: 10px;
-    display: inline-block;
+  list-style: none;
+  padding-left: 10px;
+  display: inline-block;
 
 }
 
 a {
-    color: white;
+  color: white;
 
 }
 
 /* Main */
 
 h1 {
-    font-weight: 500;
-    font-size: 24px;
-    margin-top: 72px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 72px;
+}
+
+/*Contact Page*/
+
+.profile-img {
+  width: 25%;
 }
