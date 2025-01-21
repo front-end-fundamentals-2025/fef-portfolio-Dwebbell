@@ -22,7 +22,8 @@ header {
 ul {
   list-style: none;
   padding-left: 10px;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
 
 }
 
@@ -46,6 +47,7 @@ h1 {
 .home-page-text {
   width: 400px;
 }
+
 
 /* About me*/
 
