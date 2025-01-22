@@ -23,7 +23,8 @@ ul {
   list-style: none;
   padding-left: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 20px;
 
 }
 
