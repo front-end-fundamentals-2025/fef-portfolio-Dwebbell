@@ -6,14 +6,13 @@
 
 #site-logo {
   font-weight: 900;
-  font-size: 3rem;
-  border-left: 3rem;
-  display: inline-block;
+  font-size: 2rem;
+  display: inline;
   color: #e5e4a9;
 }
 
 header {
-  padding-left: 3rem;
+  padding-left: 1rem;
   background-color: #2d7596;
   display: flex;
   align-items: center;
@@ -23,7 +22,6 @@ header {
 ul {
   list-style: none;
   display: flex;
-  justify-content: start;
 
 }
 
@@ -34,7 +32,19 @@ a {
 li {
   font-size: 1.2rem;
   color: black;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 560px) {
+  header, ul {
+    flex-direction: column;
+    align-items: start;
+    
+  }
+   ul {
+    padding: 0;
+  }
+  
 }
 
 /* Main Index and Header*/
@@ -101,14 +111,23 @@ h1 {
   width: 100%;
 }
 
-.img-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+@media screen and (min-width: 560px) {
+  .img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
+@media screen and (min-width: 1000px) {
+  .img-container {
+    grid-template-columns: repeat (3, 1fr);
+  }
+}
+
 
 /* Footer */
 
 footer {
 
-  padding-top: 100px;
+  padding-top: 3rem;
 }
