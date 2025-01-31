@@ -97,7 +97,14 @@ h1 {
   font-style: medium;
 }
 
+.project-overview-img{
+  width: 100%;
+}
 
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /* Footer */
 
