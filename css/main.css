@@ -35,6 +35,8 @@ li {
   margin-left: 1.5rem;
 }
 
+/*Header Responsivness*/
+
 @media screen and (max-width: 560px) {
   header, ul {
     flex-direction: column;
@@ -111,6 +113,14 @@ h1 {
   width: 100%;
 }
 
+figcaption {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/*Responsivness Project Images*/
+
 @media screen and (min-width: 560px) {
   .img-container{
     display: grid;
@@ -120,10 +130,61 @@ h1 {
 
 @media screen and (min-width: 1000px) {
   .img-container {
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/*Project Après La Travail*/
+
+.fig-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+
+}
+
+.spread-page{
+  width: 80%;
+  align-items: center;
+}
+
+.apres-body {
+  background-color: #e5f5f5;
+}
+
+.small-caption {
+  font-size: small;
+  font-style: thin;
+  align-items: left;
+}
+
+/*City Library Project*/
+
+.library-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.library-img {
+  width: 100%;
+}
+
+.library-text {
+  width: 500px;
+  padding-left: 3rem;
+}
+
+/*Muniplicaty Project*/
+
+.muniplicaty-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.city-img{
+  width: 100%;
+}
 
 /* Footer */
 
