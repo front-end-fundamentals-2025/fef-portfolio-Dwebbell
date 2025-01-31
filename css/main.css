@@ -186,6 +186,30 @@ figcaption {
   width: 100%;
 }
 
+/*Robert Wun Coffe Table Book*/
+
+.robert-wun-container{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+
+.wun-img {
+  width: 100%;
+}
+
+/*Profiles in the Dark Project*/
+
+.dark-img{
+width: 100%;
+}
+
+.profiles-dark-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* Footer */
 
 footer {
