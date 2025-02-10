@@ -25,9 +25,9 @@ header {
   padding: 5px;
   border: 3px solid #2c4979;
   border-radius: 10%;
-  /* animation-name: press, shift;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out; */
+  animation-name: press;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
 }
 
 li {
@@ -35,39 +35,29 @@ li {
   color: black;
 }
 
-li:hover{
+.button:hover{
   background-color: #2c4979;
 }
 
 .button:active {
-  animation: press 500ms ease-out,shift 500ms ease-out;
+  animation: press 300ms ease-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes press {
   0%{
     background-color: #2c4979;
+    transform: translate(0, 0);
   }
   50%{
     background-color: #1c485d;
+    transform: translate(5px, 3px);
   }
   100%{
     background-color: #2c4979;
-  }
-}
-
-@keyframes shift {
-  0%{
-    transform: translate(0, 0);
-  }
-  50% {
-  transform: translate(5px, 3px);
-  }
-  100%{
     transform: translate(0, 0);
   }
 }
-
 
 ul {
   list-style: none;
@@ -82,7 +72,7 @@ a {
 
 /*Header Responsivness*/
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 630px) {
   header, ul {
     flex-direction: column;
     align-items: start;
@@ -166,7 +156,7 @@ figcaption {
 
 /*Responsivness Project Images*/
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 630px) {
   .img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
