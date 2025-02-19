@@ -32,7 +32,6 @@ header {
 
 li {
   font-size: 1.2rem;
-  color: black;
 }
 
 .button:hover{
@@ -67,6 +66,7 @@ ul {
 a {
   text-decoration: none;
   margin-left: 1.5rem;
+  color: black;
 }
 
 
