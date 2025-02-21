@@ -25,13 +25,6 @@ header {
   padding: 5px;
   border: 3px solid #2c4979;
   border-radius: 10%;
-  animation-name: press;
-  animation-duration: 300ms;
-  animation-timing-function: ease-out;
-}
-
-li {
-  font-size: 1.2rem;
 }
 
 .button:hover{
@@ -39,7 +32,7 @@ li {
 }
 
 .button:active {
-  animation: press 300ms ease-out;
+  animation: press 200ms ease-out;
   animation-fill-mode: forwards;
 }
 
@@ -67,6 +60,10 @@ a {
   text-decoration: none;
   margin-left: 1.5rem;
   color: black;
+}
+
+li {
+  font-size: 1.2rem;
 }
 
 
@@ -130,10 +127,45 @@ h1 {
 }
 
 #form-message {
-  
+  resize: none;
   font-size: 16px;
   width: 300px;
   height: 200px;
+}
+
+#submit-button{
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(91, 181, 91);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#popup{
+  display: none;
+  position: absolute;
+  right: 20px;
+  color: white;
+  padding: 12px 20px;
+  background-color: rgb(96, 181, 91);
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 16;
+  opacity: 0;
+  /*The two lines under and the #popup.hide are from ChatGPThttps://chatgpt.com/share/67b7d130-1b04-8003-b21e-accd1d85a392 */
+  transform: translateX(0);
+  transition: opacity 0.3s ease-in-out, transform 1s ease-in-out;
+}
+
+#popup.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#popup.hide{
+  transform: translateX(100vw);
+  opacity: 0;
 }
 
 /* Projects */
